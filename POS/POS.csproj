@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C2106DF0-5861-49AA-8208-A4A63E8F0D29}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>POS</RootNamespace>
+    <AssemblyName>POS</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.4\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHome.Designer.cs">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\frmProductAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\frmProductAdd.Designer.cs">
+      <DependentUpon>frmProductAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\frmStaffAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\frmStaffAdd.Designer.cs">
+      <DependentUpon>frmStaffAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginPage.Designer.cs">
+      <DependentUpon>loginPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainclass.cs" />
+    <Compile Include="Model\frmCategoryAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\frmCategoryAdd.Designer.cs">
+      <DependentUpon>frmCategoryAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\tableADD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\tableADD.Designer.cs">
+      <DependentUpon>tableADD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="parent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="parent.Designer.cs">
+      <DependentUpon>parent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sample.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sample.Designer.cs">
+      <DependentUpon>sample.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SampleView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleView.Designer.cs">
+      <DependentUpon>SampleView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\frmCategoriesView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\frmCategoriesView.Designer.cs">
+      <DependentUpon>frmCategoriesView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\frmProductView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\frmProductView.Designer.cs">
+      <DependentUpon>frmProductView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\frmStaffview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\frmStaffview.Designer.cs">
+      <DependentUpon>frmStaffview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\frmTableview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\frmTableview.Designer.cs">
+      <DependentUpon>frmTableview.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmHome.resx">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\frmProductAdd.resx">
+      <DependentUpon>frmProductAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\frmStaffAdd.resx">
+      <DependentUpon>frmStaffAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginPage.resx">
+      <DependentUpon>loginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\frmCategoryAdd.resx">
+      <DependentUpon>frmCategoryAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\tableADD.resx">
+      <DependentUpon>tableADD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="parent.resx">
+      <DependentUpon>parent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="sample.resx">
+      <DependentUpon>sample.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleView.resx">
+      <DependentUpon>SampleView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\frmCategoriesView.resx">
+      <DependentUpon>frmCategoriesView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\frmProductView.resx">
+      <DependentUpon>frmProductView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\frmStaffview.resx">
+      <DependentUpon>frmStaffview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\frmTableview.resx">
+      <DependentUpon>frmTableview.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download-removebg-preview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29-removebg-preview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29-removebg-preview1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %282%29-removebg-preview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29-removebg-preview2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %282%29-removebg-preview %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29-removebg-preview3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download-removebg-preview1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %283%29-removebg-preview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %284%29-removebg-preview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29-removebg-preview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %285%29-removebg-preview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29-removebg-preview1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%29-removebg-preview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mages %282%29-removebg-preview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %285%29-removebg-preview1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %286%29-removebg-preview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29-removebg-preview4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %287%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %283%29-removebg-preview1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %284%29-removebg-preview1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imag1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download-removebg-preview2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bag.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
